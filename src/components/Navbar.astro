@@ -1,0 +1,127 @@
+---
+
+---
+
+<script>
+    const navbarToggle = document.querySelector(".navbar-toggle");
+    const navbarMenu = document.querySelector(".navbar-menu");
+    const currentURL = window.location.href;
+    const navLinks = document.querySelectorAll(".navbar-menu li a");
+    navLinks.forEach((link) => {
+        if (link.href === currentURL) {
+            link.classList.add("active");
+        }
+    });
+    navbarToggle.addEventListener("click", () => {
+        navbarMenu.classList.toggle("active-nav");
+    });
+</script>
+
+<header>
+    <nav>
+        <a class="logo" href="/">
+            <img src="/images/logo.png" alt="profile up logo" />
+        </a>
+        <div class="navbar-toggle">
+            <span class="navbar-toggle-icon"></span>
+            <span class="navbar-toggle-icon"></span>
+            <span class="navbar-toggle-icon"></span>
+        </div>
+        <ul class="navbar-menu">
+            <li>
+                <a href="/">Inicio</a>
+            </li>
+            <li>
+                <a href="/servicios">Servicios</a>
+            </li>
+            <li>
+                <a href="/sobremi">Sobre mí</a>
+            </li>
+            <li>
+                <a href="/contacto">Contacto</a>
+            </li>
+            <li>
+                <a id="btn" href="#">Descargar CV</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<style>
+    header {
+        position: fixed;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0px -9px 59px 0px rgba(135, 135, 135, 0.67);
+        -webkit-box-shadow: 0px -9px 59px 0px rgba(135, 135, 135, 0.67);
+        -moz-box-shadow: 0px -9px 59px 0px rgba(135, 135, 135, 0.67);
+    }
+    .logo {
+        z-index: 9999;
+    }
+    header nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 0;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .navbar-menu {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+    }
+
+    .navbar-menu li a {
+        text-decoration: none;
+        color: #2a2c2c;
+        font-size: 1.5rem;
+    }
+    .navbar-menu li a.active {
+        font-weight: 600;
+    }
+    #btn {
+        background-color: #1d6ae6;
+        color: white;
+        padding: 12px 20px;
+        border-radius: 100px;
+        border: 2px solid #1d6ae6;
+    }
+    .navbar-toggle {
+        display: none;
+        flex-direction: column;
+        gap: 8px;
+        cursor: pointer;
+        z-index: 9999;
+    }
+    .navbar-toggle-icon {
+        width: 35px;
+        height: 5px;
+        background-color: #2a2c2c;
+        border-radius: 2px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .navbar-toggle {
+            display: flex;
+        }
+        .navbar-menu {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: white;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+            transform: translateY(-100%);
+            transition: transform 0.4s ease-in-out;
+        }
+        .navbar-menu.active-nav {
+            transform: translateY(0);
+        }
+    }
+</style>
