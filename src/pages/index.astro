@@ -2,10 +2,63 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Descubrí tu potencial">
 	<main>
-		<h1>Hola Mundo!</h1>
+		<section class="hero">
+			<div class="wrapper">
+				<span>para empresas y particulares</span>
+				<h1>Descubrí todo tu potencial</h1>
+				<p>RRHH, asesorías, psicotécnicos, terapia y ¡Mucho más!</p>
+			</div>
+			<img
+				class="decoration"
+				src="/images/Intersect.png"
+				alt="decoracion blanca"
+			/>
+		</section>
 	</main>
 </Layout>
 
-<style></style>
+<style>
+	.hero {
+		background-image: url("/images/home_banner.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 900px;
+		width: 100%;
+		position: relative;
+		color: white;
+	}
+	.wrapper {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding-top: 260px;
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		gap: 40px;
+	}
+	.wrapper h1 {
+		font-size: 4rem;
+		max-width: 600px;
+	}
+	.wrapper span {
+		background-color: #1d6ae6;
+		text-transform: uppercase;
+		font-weight: 300;
+		font-size: 1.125rem;
+		padding: 6px;
+		letter-spacing: 0.16rem;
+	}
+	.wrapper p {
+		font-size: 2rem;
+		max-width: 500px;
+		font-weight: 300;
+	}
+	.decoration {
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		z-index: 1;
+	}
+</style>
