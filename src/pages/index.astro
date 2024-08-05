@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Home_form from "../components/Home_form.astro";
 ---
 
 <Layout title="Descubrí tu potencial">
@@ -9,6 +10,7 @@ import Layout from "../layouts/Layout.astro";
 				<span>para empresas y particulares</span>
 				<h1>Descubrí todo tu potencial</h1>
 				<p>RRHH, asesorías, psicotécnicos, terapia y ¡Mucho más!</p>
+				<Home_form />
 			</div>
 			<img
 				class="decoration"
@@ -37,6 +39,7 @@ import Layout from "../layouts/Layout.astro";
 		flex-direction: column;
 		align-items: start;
 		gap: 40px;
+		position: relative;
 	}
 	.wrapper h1 {
 		font-size: 4rem;

@@ -2,33 +2,104 @@
 
 ---
 
-<form>
-    <span>¿Querés obtener más información?</span>
+<form class="form">
+    <span class="title">¿Querés obtener más información?</span>
     <ul>
         <li>
-            <label for="name">Nombre*</label>
+            <label for="name">Nombre *</label>
             <input type="text" id="name" />
         </li>
         <li>
-            <label for="cel">Teléfono*</label>
+            <label for="cel">Teléfono *</label>
             <input type="text" id="cel" />
         </li>
         <li>
-            <label for="email">Email*</label>
+            <label for="email">Email *</label>
             <input type="text" id="email" />
         </li>
         <li>
-            <label for="message">Mensaje*</label>
+            <label for="message">Mensaje *</label>
             <textarea name="message" id="message"></textarea>
         </li>
-        <li>
+        <li id="terms">
             <input type="checkbox" id="checkbox" />
             <label for="checkbox">Aceptar términos y condiciones</label>
         </li>
     </ul>
 
-    <button type="submit">Enviar</button>
+    <button class="btn" type="submit">Consultar</button>
 </form>
 
-
-<style></style>
+<style>
+    .form {
+        background-color: white;
+        color: #333333;
+        position: absolute;
+        right: 0;
+        padding: 32px 60px;
+        border-radius: 20px;
+        width: 100%;
+        max-width: 477px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: -1px 5px 16px 0px rgba(128, 128, 128, 0.62);
+        -webkit-box-shadow: -1px 5px 16px 0px rgba(128, 128, 128, 0.62);
+        -moz-box-shadow: -1px 5px 16px 0px rgba(128, 128, 128, 0.62);
+    }
+    .title {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-align: center;
+        width: 100%;
+    }
+    .form ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .form ul li {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+    .form input {
+        height: 46px;
+    }
+    .form textarea {
+        height: 142px;
+        resize: none;
+    }
+    .form input,
+    .form textarea {
+        border: 1px solid #d5d5d5;
+        border-radius: 12px;
+    }
+    .form label {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    #terms {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        gap: 10px;
+        color: #8f8f8f;
+    }
+    .btn {
+        background-color: #1d6ae6;
+        color: white;
+        font-weight: 700;
+        font-size: 1rem;
+        border: 2px solid #1d6ae6;
+        border-radius: 100px;
+        padding: 16px 32px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+</style>
