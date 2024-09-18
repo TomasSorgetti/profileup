@@ -1,0 +1,36 @@
+/* Root */
+
+:root {
+    --neon-blue:#1D6AE7;
+    --white: #FFFFFF;
+    --dark-blue:#0C2953;
+    --black:#2A2C2C;
+}
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('./fonts/Poppins/Poppins-Light.ttf') format('truetype');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    height: 64px;
+    line-height: 80px;
+}
+
+h2 {
+    font-size: 50px;
+    line-height: auto;
+}

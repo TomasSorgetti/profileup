@@ -1,0 +1,19 @@
+.footer {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.footer a {
+    color: var(--white);
+}
+.footer h5 {
+    filter: brightness(.8);
+}
+
+.logo_footer {
+    width: 130px;
+}
+
+.logo_footer_container {
+    margin-bottom: 20px;
+}

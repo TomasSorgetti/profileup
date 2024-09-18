@@ -3,6 +3,9 @@ import './App.css'
 // Define pages routes
 import { Routes, Route } from 'react-router-dom'
 
+// Bootstrap CSS
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 // pages
 import Home from './pages/home/Home'
 import About from './pages/about/About'
@@ -15,14 +18,17 @@ import Capacitaciones from './pages/capacitaciones-entrevistas/Capacitaciones'
 import Error from './pages/error-page/Error'
 
 // navbar
-import Navbar from './components/navbar/Navbar'
+import NavigationBar from './components/navbar/Navbar'
+
+// Footer
+import Footer from './components/footer/Footer'
 
 function App() {
 
   return (
     <>
 
-    <Navbar/>
+    <NavigationBar/>
 
     <Routes>
       <Route path='/' element={<Home/>} />
@@ -35,7 +41,11 @@ function App() {
       <Route path='/capacitaciones-entrevistas' element={<Capacitaciones/>} />
       <Route path='*' element={<Error/>} />
     </Routes>
+
+    <Footer/>
     </>
+
+    
   )
 }
 
