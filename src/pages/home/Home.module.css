@@ -1,0 +1,13 @@
+.serviceCards_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    max-width: 58rem;
+    margin: 0 auto;
+}
+
+.iconCards_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
