@@ -2,7 +2,9 @@
     background-color: var(--black);
     color: var(--white);
 }
-
+.footer_main_content {
+    padding-top: 40px;
+}
 .footer a {
     color: var(--white);
 }

@@ -1,11 +1,8 @@
 // Crucial
 import React from 'react'
 
-// Bootstrap CSS
-import 'bootstrap/dist/css/bootstrap.min.css';
-
 // Navigation library
-import { Link, NavLink } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom";
 
 // Logo image import
 import logoLight from '../../assets/profielUp_logo-light.png'
@@ -16,7 +13,7 @@ import styles from './Footer.module.css'
 const Footer = () => {
   return (
     <footer className={`page-footer font-small blue pt-4 ${styles.footer}`}>
-    <div className="container-fluid text-center text-md-left">
+    <div className={`container-fluid text-center text-md-left ${styles.footer_main_content}`}>
         <div className="row">
             <div className="col-md-3 mt-md-0 mt-3">
                 <div className={styles.logo_footer_container}>
