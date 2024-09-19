@@ -13,7 +13,7 @@ import imageasesoria from '../../assets/asesoria_card_image.png'
 import imageconsultoria from '../../assets/consultoria_card_image.png'
 import imageRRHH from '../../assets/rrhh_card_image.png'
 import imagepsicotecnico from '../../assets/psicotecnico_card_image.png'
-import imageorientacionprofesional from '../../assets/orientacionprofesional_card_image.png'
+import imageorientacionprofesional from '../../assets/orientacionProfesional_card_image.png'
 
 // Homesocial import
 import Homesocial from '../../components/homeSocial/Homesocial'
