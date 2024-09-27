@@ -17,14 +17,16 @@
   background: url("../../assets/images/home_banner.png") no-repeat;
   background-size: cover;
   background-position: bottom center;
-  min-height: 100vh;
   display: flex;
 }
 .home_main_banner_wrapper {
   position: relative;
   width: 100%;
-  max-width: 1200px;
-  margin: 180px auto 0 auto;
+  max-width: 1400px;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .home_body {
