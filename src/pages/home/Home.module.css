@@ -10,4 +10,44 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+.home_main_banner {
+    background: url("../../assets/home_banner.png") no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    min-height: 100vh;
+}
+
+.home_body {
+    background: url("../../assets/home_body_background.png") no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+.trabaja_section_container {
+    margin-top: 100px;
+}
+
+.servicios_section_container {
+    margin-top: 200px;
+}
+
+.home_social_container {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+@media screen and (max-width:1200px) {
+       .serviceCards_container {
+            grid-template-columns: 1fr 1fr;
+            max-width: 45rem;
+        }
+}
+@media screen and (max-width:700px) {
+       .serviceCards_container {
+            grid-template-columns:1fr;
+            max-width: 45rem;
+        }
 }

@@ -19,7 +19,7 @@ import imageorientacionprofesional from '../../assets/orientacionProfesional_car
 import Homesocial from '../../components/homeSocial/Homesocial'
 
 // Title and description import
-import Titledesc from '../../components/titleAndDesc/Title'
+import Titledesc from '../../components/title/Title'
 
 // Icon card import
 import Iconcard from '../../components/iconCard/Iconcard'
@@ -28,6 +28,10 @@ import Iconcard from '../../components/iconCard/Iconcard'
 import profIcon from '../../assets/profesionalismo_icon.svg'
 import atenIcon from '../../assets/atencion_detalle_icon.svg'
 import solIcon from '../../assets/soluciones_icon.svg'
+
+// Main title import
+import Maintitle from '../../components/mainTitle/Maintitle'
+
 
 const Home = () => {
 
@@ -97,34 +101,47 @@ const Home = () => {
       name: "Soluciones",
       description: "Description 1"
     },
-    
+
   ]
 
   return (
-    <div>
-      <h1>
-        Home
-      </h1>
+    <div >
 
-      <div className={styles.iconCards_container}>
-        {
-          iconCardsHome.map(icon => (
-            <Iconcard key={icon.id} title={icon.name} description={icon.description} src={icon.src} />
-          ))
-        }
+      <div className={styles.home_main_banner}>
+        <Maintitle markedtext="Para empresas y particulares" title="Descubrí todo tu potencial" description="RRHH, asesorías, psicotécnicos, terapia y ¡Mucho más!"></Maintitle>
       </div>
 
-      <Titledesc title="Nuestros servicios" description="Para conseguir un nuevo empleo, es vital poder comunicar nuestras fortalezas de forma práctica y eficiente" />
+      <div className={styles.home_body}>
 
-      <div className={styles.serviceCards_container}>
-        {
-          ServiciesCardsHome.map(servicio => (
-            <Servicecard key={servicio.id} title={servicio.name} description={servicio.description} src={servicio.src} link={servicio.link} />
-          ))
-        }
+        <div className={styles.trabaja_section_container}>
+          <Titledesc title="¿Por qué trabajar con nosotros?" />
+          <div className={styles.iconCards_container}>
+            {
+              iconCardsHome.map(icon => (
+                <Iconcard key={icon.id} title={icon.name} description={icon.description} src={icon.src} />
+              ))
+            }
+          </div>
+        </div>
+
+        <div className={styles.servicios_section_container}>
+          <Titledesc title="Nuestros servicios" description="Para conseguir un nuevo empleo, es vital poder comunicar nuestras fortalezas de forma práctica y eficiente" />
+
+          <div className={styles.serviceCards_container}>
+            {
+              ServiciesCardsHome.map(servicio => (
+                <Servicecard key={servicio.id} title={servicio.name} description={servicio.description} src={servicio.src} link={servicio.link} />
+              ))
+            }
+          </div>
+        </div>
+
+
+        <div className={styles.home_social_container}>
+          <Homesocial />
+        </div>
+
       </div>
-
-      <Homesocial />
 
     </div>
   )
