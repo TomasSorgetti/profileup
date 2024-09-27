@@ -1,0 +1,8 @@
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: flex-start;
+  font-size: 0.75rem;
+  color: var(--light-text);
+}

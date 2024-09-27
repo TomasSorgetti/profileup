@@ -1,53 +1,60 @@
 .serviceCards_container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-    max-width: 58rem;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  max-width: 58rem;
+  margin: 0 auto;
 }
 
 .iconCards_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .home_main_banner {
-    background: url("../../assets/home_banner.png") no-repeat;
-    background-size: cover;
-    background-position: bottom center;
-    min-height: 100vh;
+  background: url("../../assets/images/home_banner.png") no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  min-height: 100vh;
+  display: flex;
+}
+.home_main_banner_wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 180px auto 0 auto;
 }
 
 .home_body {
-    background: url("../../assets/home_body_background.png") no-repeat;
-    background-size: cover;
-    background-position: top center;
+  background: url("../../assets/images/home_body_background.png") no-repeat;
+  background-size: cover;
+  background-position: top center;
 }
 
 .trabaja_section_container {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
 .servicios_section_container {
-    margin-top: 200px;
+  margin-top: 200px;
 }
 
 .home_social_container {
-    margin-top: 200px;
-    margin-bottom: 200px;
+  margin-top: 200px;
+  margin-bottom: 200px;
 }
 
-@media screen and (max-width:1200px) {
-       .serviceCards_container {
-            grid-template-columns: 1fr 1fr;
-            max-width: 45rem;
-        }
+@media screen and (max-width: 1200px) {
+  .serviceCards_container {
+    grid-template-columns: 1fr 1fr;
+    max-width: 45rem;
+  }
 }
-@media screen and (max-width:700px) {
-       .serviceCards_container {
-            grid-template-columns:1fr;
-            max-width: 45rem;
-        }
+@media screen and (max-width: 700px) {
+  .serviceCards_container {
+    grid-template-columns: 1fr;
+    max-width: 45rem;
+  }
 }
