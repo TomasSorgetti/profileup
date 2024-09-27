@@ -8,6 +8,11 @@
   --light-text: #8f8f8f;
 }
 
+body {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
 @font-face {
   font-family: "Poppins";
   src: url("./assets/fonts/Poppins/Poppins-Light.ttf") format("truetype");
