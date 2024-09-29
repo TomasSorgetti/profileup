@@ -1,0 +1,19 @@
+.accordion {
+  max-width: 1400px;
+  margin: 10rem auto;
+}
+/* .accordionItem {
+  border: none;
+} */
+.accordionItem .accordion-button {
+  border-bottom: var(--neon-blue-opacity) 4px solid;
+}
+/* .accordionItem .accordion-button:not(.collapsed) {
+  background-color: white;
+} */
+.accordionItem h2 button .accordion-button.collapsed {
+  border-bottom: var(--neon-blue) 4px solid;
+}
+.accordionItem h2 button:focus {
+  box-shadow: none;
+}

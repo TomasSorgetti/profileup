@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import ServicesBanner from "../../components/layout/servicesBanner/ServicesBanner";
 
 const Terapia = () => {
   return (
     <div>
-      <h1>Terapia</h1>
+      <ServicesBanner />
     </div>
-  )
-}
+  );
+};
 
-export default Terapia
+export default Terapia;
