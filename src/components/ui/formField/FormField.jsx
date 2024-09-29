@@ -1,6 +1,7 @@
 import styles from "./FormField.module.css";
 
 export default function FormField({
+  id,
   label,
   type,
   name,
@@ -15,6 +16,7 @@ export default function FormField({
       <label>{label}</label>
       {textarea ? (
         <textarea
+          id={id}
           name={name}
           type={type}
           placeholder={placeholder}
@@ -24,6 +26,7 @@ export default function FormField({
         />
       ) : (
         <input
+          id={id}
           name={name}
           type={type}
           placeholder={placeholder}

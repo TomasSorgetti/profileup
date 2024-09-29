@@ -13,15 +13,18 @@ export default function HomeForm() {
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
+  const handleCheckboxChange = (e) => {};
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log(formData);
   };
 
   return (
-    <form className={styles.form}>
+    <form onSubmit={handleSubmit} className={styles.form}>
       <span className={styles.title}>¿Querés obtener más información?</span>
       <FormField
+        id="home_name"
         name="name"
         label="Nombre:"
         type="text"
@@ -31,6 +34,7 @@ export default function HomeForm() {
         required
       />
       <FormField
+        id="home_email"
         name="email"
         label="Email:"
         type="email"
@@ -40,6 +44,7 @@ export default function HomeForm() {
         required
       />
       <FormField
+        id="home_message"
         name="message"
         label="Mensaje:"
         type="text"
@@ -50,6 +55,7 @@ export default function HomeForm() {
         required
       />
       <Checkbox
+        id="home_conditions"
         name="conditions"
         label="Acepto los terminos y condiciones"
         handleChange={handleChange}

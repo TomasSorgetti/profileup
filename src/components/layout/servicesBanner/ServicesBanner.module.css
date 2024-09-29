@@ -1,0 +1,37 @@
+.servicesBanner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.online {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.online span {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.servicesBanner_text h1 {
+  margin: 2rem 0;
+}
+.servicesBanner_text ul {
+  margin-left: 1rem;
+  max-width: 508px;
+}
+.servicesBanner_text ul li {
+  font-size: 2rem;
+  font-weight: 300;
+}
+.servicesBanner_text a {
+  display: inline-block;
+  margin-top: 1.5rem;
+  background-color: var(--neon-blue);
+  color: var(--white);
+  font-weight: 300;
+  font-size: 2rem;
+  padding: 12px 56px;
+  border-radius: 50px;
+}

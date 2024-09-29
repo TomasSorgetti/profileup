@@ -2,6 +2,7 @@
 
 :root {
   --neon-blue: #1d6ae7;
+  --neon-blue-opacity: rgba(29, 106, 231, 0.5);
   --white: #ffffff;
   --dark-blue: #0c2953;
   --black: #2a2c2c;
@@ -59,6 +60,8 @@ a {
 
 h1 {
   line-height: 80px;
+  font-size: 64px;
+  font-weight: 700;
 }
 
 h2 {

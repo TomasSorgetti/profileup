@@ -32,6 +32,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contacto" element={<Contacto />} />
+
         <Route path="/rrhh" element={<Rrhh />} />
         <Route path="/terapia-piscologica" element={<Terapia />} />
         <Route path="/asesoria-consultoria" element={<Asesoria />} />
@@ -43,6 +44,7 @@ function App() {
           path="/capacitaciones-entrevistas"
           element={<Capacitaciones />}
         />
+
         <Route path="*" element={<Error />} />
       </Routes>
 
