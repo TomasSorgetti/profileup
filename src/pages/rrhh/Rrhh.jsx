@@ -7,12 +7,22 @@ const Rrhh = () => {
   const acordeonlist = [
     {
       key: 1,
-      title: "¿Quiénes somos?",
+      title: "¿Cómo organizan la gestion del proceso?",
       description: "sarasa",
     },
     {
       key: 2,
-      title: "¿Por que elegirnos?",
+      title: "¿En cuánto tiempo se ven resultados?",
+      description: "sarasa 2",
+    },
+    {
+      key: 3,
+      title: "¿Cómo se gestionan las entrevistas?",
+      description: "sarasa 2",
+    },
+    {
+      key: 4,
+      title: "¿Qué métodos utilizan?",
       description: "sarasa 2",
     },
   ];

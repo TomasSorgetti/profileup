@@ -9,7 +9,7 @@ const Maintitle = ({ markedtext, title, description }) => {
     <div className={styles.main_title_container}>
       <span>{markedtext}</span>
       <h1>{title}</h1>
-      <p>{description}</p>
+      <h3>{description}</h3>
     </div>
   );
 };

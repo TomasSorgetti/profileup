@@ -12,14 +12,8 @@
   letter-spacing: 0.3125rem;
   font-size: 1.5rem;
 }
-.main_title_container h1 {
+.main_title_container h1,  .main_title_container h3{
   display: inline;
-  font-size: 4rem;
   max-width: 562px;
-  font-weight: 700;
 }
-.main_title_container p {
-  font-size: 2rem;
-  font-weight: 300;
-  max-width: 500px;
-}
+
