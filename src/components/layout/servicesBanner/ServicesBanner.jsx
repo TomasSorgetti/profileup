@@ -17,8 +17,8 @@ export default function ServicesBanner({
         </div>
         <h1>{title}</h1>
         <ul>
-          <li>{prop1}</li>
-          <li>{prop2}</li>
+          <li><h3>{prop1}</h3></li>
+          <li><h3>{prop2}</h3></li>
         </ul>
         <a href={link}>{btnLabel}</a>
       </div>
