@@ -9,22 +9,26 @@ const Rrhh = () => {
     {
       key: 1,
       title: "¿Cómo organizan la gestion del proceso?",
-      description: "sarasa",
+      description:
+        "El proceso inicia con un contacto inicial de parte de la empresa ó particular que se encuentre en la búsqueda de personal. Se pauta una reunión para conversar sobre la vacante, relevamiento de los puntos principales del perfil y las tareas a cubrir y los aranceles de la búsqueda para iniciarla lo antes posible.",
     },
     {
       key: 2,
       title: "¿En cuánto tiempo se ven resultados?",
-      description: "sarasa 2",
+      description:
+        "Una vez publicada la vacante se buscará filtrar los perfiles que se encuentren más cercanos al requerimiento de la empresa. Según la demanda de curriculums, podría obtenerse el resultado en 2 semanas más tardar. Se puede brindar también el servicio de psicotécnico para complementar la selección laboral.",
     },
     {
       key: 3,
       title: "¿Cómo se gestionan las entrevistas?",
-      description: "sarasa 2",
+      description:
+        "Una vez realizado el proceso de Screening inicial de los cv´s, se pautarán las entrevistas virtuales con los candidatos y se gestionará un informe de las competencias y experiencias de los mismos. Si la empresa decide avanzar con ellos, la consultora se encargará de gestionar las entrevistas con el cliente de manera virtual o presencial según predilección de la empresa.",
     },
     {
       key: 4,
       title: "¿Qué métodos utilizan?",
-      description: "sarasa 2",
+      description:
+        "Utilizamos servicios de posteo en redes sociales / publicación de avisos puntuales / programa de referidos y base de datos de la consultora de postulantes anteriores que han trabajado con nosotros. ",
     },
   ];
 
