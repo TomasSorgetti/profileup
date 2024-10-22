@@ -7,8 +7,14 @@ import { Link, NavLink } from "react-router-dom";
 // Logo image import
 import logoLight from "../../../assets/images/profielUp_logo-light.png";
 
+// icons social media
+import linkedinIcon from "../../../assets/icons/linkedin.svg";
+import instagramIcon from "../../../assets/icons/instagram.svg";
+import whatsappIcon from "../../../assets/icons/whatsapp.svg";
+
 // Footer CSS
 import styles from "./Footer.module.css";
+import IconText from "../../ui/iconText/IconText";
 
 const Footer = () => {
   return (
@@ -54,15 +60,21 @@ const Footer = () => {
 
           <div className="col-md-3 mb-md-0 mb-3">
             <h5>Redes sociales</h5>
-            <ul className="list-unstyled">
+            <ul className="list-unstyled d-flex flex-column align-items-start">
               <li>
-                <a href="#!">Linkedin</a>
+                <a href="#!">
+                  <IconText icon={linkedinIcon}>Linkedin</IconText>
+                </a>
               </li>
               <li>
-                <a href="#!">Instagram</a>
+                <a href="#!">
+                  <IconText icon={instagramIcon}>Instagram</IconText>
+                </a>
               </li>
               <li>
-                <a href="#!">whatsapp</a>
+                <a href="#!">
+                  <IconText icon={whatsappIcon}>Whatsapp</IconText>
+                </a>
               </li>
             </ul>
           </div>
@@ -72,7 +84,8 @@ const Footer = () => {
       <hr />
 
       <div className="footer-copyright text-center py-3">
-        Todos los derechos reservados a Matías Martínez © Copyright 2024
+        Todos los derechos reservados a Matías Martínez © Copyright{" "}
+        {new Date().getFullYear()}
       </div>
     </footer>
   );
