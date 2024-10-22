@@ -3,6 +3,8 @@ import ServicesBanner from "../../components/layout/servicesBanner/ServicesBanne
 import capacitacionesservice from "../../assets/images/capacitaciones_banner.png";
 import ServiceWrapper from "../../components/layout/wrapper/ServiceWrapper";
 import Acordion from "../../components/ui/acordion/Acordion";
+import Carrousel from "../../components/layout/carrousel/Carrousel";
+
 const Capacitaciones = () => {
   const acordeonlist = [
     {
@@ -43,6 +45,7 @@ const Capacitaciones = () => {
         />
         <Acordion acordeonlist={acordeonlist} />
       </>
+      <Carrousel />
     </ServiceWrapper>
   );
 };

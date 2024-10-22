@@ -3,7 +3,7 @@ import ServicesBanner from "../../components/layout/servicesBanner/ServicesBanne
 import psicotecnicoservice from "../../assets/images/psicotecnico_banner.png";
 import ServiceWrapper from "../../components/layout/wrapper/ServiceWrapper";
 import Acordion from "../../components/ui/acordion/Acordion";
-
+import Carrousel from "../../components/layout/carrousel/Carrousel";
 const Psicotecnico = () => {
   const acordeonlist = [
     {
@@ -45,6 +45,7 @@ const Psicotecnico = () => {
         />
         <Acordion acordeonlist={acordeonlist} />
       </>
+      <Carrousel />
     </ServiceWrapper>
   );
 };

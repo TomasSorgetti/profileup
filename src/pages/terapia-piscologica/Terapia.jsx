@@ -3,7 +3,7 @@ import ServicesBanner from "../../components/layout/servicesBanner/ServicesBanne
 import terapiaserivce from "../../assets/images/terapia.png";
 import ServiceWrapper from "../../components/layout/wrapper/ServiceWrapper";
 import Acordion from "../../components/ui/acordion/Acordion";
-
+import Carrousel from "../../components/layout/carrousel/Carrousel";
 const Terapia = () => {
   const acordeonlist = [
     {
@@ -51,6 +51,7 @@ const Terapia = () => {
         />
         <Acordion acordeonlist={acordeonlist} />
       </>
+      <Carrousel />
     </ServiceWrapper>
   );
 };

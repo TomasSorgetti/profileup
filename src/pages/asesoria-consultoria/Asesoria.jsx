@@ -3,6 +3,8 @@ import ServicesBanner from "../../components/layout/servicesBanner/ServicesBanne
 import asesoriaservice from "../../assets/images/asesoria_banner.png";
 import ServiceWrapper from "../../components/layout/wrapper/ServiceWrapper";
 import Acordion from "../../components/ui/acordion/Acordion";
+import Carrousel from "../../components/layout/carrousel/Carrousel";
+
 const Asesoria = () => {
   const acordeonlist = [
     {
@@ -44,6 +46,7 @@ const Asesoria = () => {
         />
         <Acordion acordeonlist={acordeonlist} />
       </>
+      <Carrousel />
     </ServiceWrapper>
   );
 };
