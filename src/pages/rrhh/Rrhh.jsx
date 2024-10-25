@@ -57,7 +57,7 @@ const Rrhh = () => {
     {
       id: 4,
       title: "Análisis de casos",
-      description: "",
+      description: "Lorem impsum asdkjaslkd sadkjslkadj sadj.",
       src: profIcon,
     },
     {
