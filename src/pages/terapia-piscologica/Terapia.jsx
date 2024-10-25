@@ -5,6 +5,8 @@ import ServiceWrapper from "../../components/layout/wrapper/ServiceWrapper";
 import Acordion from "../../components/ui/acordion/Acordion";
 import Carrousel from "../../components/layout/carrousel/Carrousel";
 import ServiceIconCards from "../../components/features/serviceIconCards/serviceIconCards";
+import profIcon from "../../assets/icons/profesionalismo_icon.svg";
+
 const Terapia = () => {
   const acordeonlist = [
     {
