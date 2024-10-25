@@ -22,7 +22,7 @@ const Homesocial = () => {
       <img src={phoneguy} alt="joven hablando por teléfono" />
 
       <div className={styles.homeSocial_container_text}>
-        <h4>lorem ipsum</h4>
+        <span>lorem ipsum</span>
 
         <h2>Lorem impsum diaor seculum</h2>
 
