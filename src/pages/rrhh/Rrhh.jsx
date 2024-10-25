@@ -4,6 +4,9 @@ import rrhhService from "../../assets/images/rrhhService.png";
 import ServiceWrapper from "../../components/layout/wrapper/ServiceWrapper";
 import Acordion from "../../components/ui/acordion/Acordion";
 import Carrousel from "../../components/layout/carrousel/Carrousel";
+import profIcon from "../../assets/icons/profesionalismo_icon.svg";
+import ServiceIconCards from "../../components/features/serviceIconCards/serviceIconCards";
+
 const Rrhh = () => {
   const acordeonlist = [
     {
@@ -32,6 +35,39 @@ const Rrhh = () => {
     },
   ];
 
+  const iconCards = [
+    {
+      id: 1,
+      title: "Profesionalismo",
+      description: "Lorem impsum asdkjaslkd sadkjslkadj sadj.",
+      src: profIcon,
+    },
+    {
+      id: 2,
+      title: "Análisis de competencias",
+      description: "Lorem impsum asdkjaslkd sadkjslkadj sadj.",
+      src: profIcon,
+    },
+    {
+      id: 3,
+      title: "Efectividad",
+      description: "Lorem impsum asdkjaslkd sadkjslkadj sadj.",
+      src: profIcon,
+    },
+    {
+      id: 4,
+      title: "Análisis de casos",
+      description: "",
+      src: profIcon,
+    },
+    {
+      id: 5,
+      title: "Eficiencia",
+      description: "Lorem impsum asdkjaslkd sadkjslkadj sadj.",
+      src: profIcon,
+    },
+  ];
+
   return (
     <ServiceWrapper>
       <>
@@ -48,6 +84,11 @@ const Rrhh = () => {
           image={rrhhService}
           link="/#"
           btnLabel="Realizar consulta"
+        />
+        <ServiceIconCards
+          cards={iconCards}
+          title="¿Qué te ofrecemos?"
+          description="Seleccionar al profesional indicado, es vital para un progreso sostenido"
         />
         <Acordion acordeonlist={acordeonlist} />
       </>

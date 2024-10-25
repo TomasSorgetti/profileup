@@ -4,6 +4,7 @@ import terapiaserivce from "../../assets/images/terapia.png";
 import ServiceWrapper from "../../components/layout/wrapper/ServiceWrapper";
 import Acordion from "../../components/ui/acordion/Acordion";
 import Carrousel from "../../components/layout/carrousel/Carrousel";
+import ServiceIconCards from "../../components/features/serviceIconCards/serviceIconCards";
 const Terapia = () => {
   const acordeonlist = [
     {
@@ -31,6 +32,38 @@ const Terapia = () => {
         "Podes comunicarte de manera telefónica o enviar tu consulta por mail. Dejanos tu motivo de consulta como para dar una guía del tema que te gustaría abordar sin mucho detalle; horarios posibles para la sesión; modalidad que estás buscando y en caso que sea presencial indicanos zonas de facilidad de acceso.",
     },
   ];
+  const iconCards = [
+    {
+      id: 1,
+      title: "Profesionalismo",
+      description: "Lorem impsum asdkjaslkd sadkjslkadj sadj.",
+      src: profIcon,
+    },
+    {
+      id: 2,
+      title: "Análisis de competencias",
+      description: "Lorem impsum asdkjaslkd sadkjslkadj sadj.",
+      src: profIcon,
+    },
+    {
+      id: 3,
+      title: "Efectividad",
+      description: "Lorem impsum asdkjaslkd sadkjslkadj sadj.",
+      src: profIcon,
+    },
+    {
+      id: 4,
+      title: "Análisis de casos",
+      description: "",
+      src: profIcon,
+    },
+    {
+      id: 5,
+      title: "Eficiencia",
+      description: "Lorem impsum asdkjaslkd sadkjslkadj sadj.",
+      src: profIcon,
+    },
+  ];
 
   return (
     <ServiceWrapper>
@@ -48,6 +81,11 @@ const Terapia = () => {
           image={terapiaserivce}
           link="/#"
           btnLabel="Agendar una sesión"
+        />
+        <ServiceIconCards
+          cards={iconCards}
+          title="¿Por qué hacer terapia?"
+          description="La terapia psicológica es valiosa por varias razones:"
         />
         <Acordion acordeonlist={acordeonlist} />
       </>

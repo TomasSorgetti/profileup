@@ -4,6 +4,7 @@ import capacitacionesservice from "../../assets/images/capacitaciones_banner.png
 import ServiceWrapper from "../../components/layout/wrapper/ServiceWrapper";
 import Acordion from "../../components/ui/acordion/Acordion";
 import Carrousel from "../../components/layout/carrousel/Carrousel";
+import ServiceIconCards from "../../components/features/serviceIconCards/serviceIconCards";
 
 const Capacitaciones = () => {
   const acordeonlist = [
@@ -25,6 +26,38 @@ const Capacitaciones = () => {
       description: "Proceso de entrevistas por competencias.",
     },
   ];
+  const iconCards = [
+    {
+      id: 1,
+      title: "Profesionalismo",
+      description: "Lorem impsum asdkjaslkd sadkjslkadj sadj.",
+      src: profIcon,
+    },
+    {
+      id: 2,
+      title: "Análisis de competencias",
+      description: "Lorem impsum asdkjaslkd sadkjslkadj sadj.",
+      src: profIcon,
+    },
+    {
+      id: 3,
+      title: "Efectividad",
+      description: "Lorem impsum asdkjaslkd sadkjslkadj sadj.",
+      src: profIcon,
+    },
+    {
+      id: 4,
+      title: "Análisis de casos",
+      description: "",
+      src: profIcon,
+    },
+    {
+      id: 5,
+      title: "Eficiencia",
+      description: "Lorem impsum asdkjaslkd sadkjslkadj sadj.",
+      src: profIcon,
+    },
+  ];
 
   return (
     <ServiceWrapper>
@@ -42,6 +75,11 @@ const Capacitaciones = () => {
           image={capacitacionesservice}
           link="/#"
           btnLabel="Realizar consulta"
+        />
+        <ServiceIconCards
+          cards={iconCards}
+          title="¿Qué te ofrecemos?"
+          description="Para conseguir un nuevo empleo, es vital poder comunicar nuestras fortalezas de forma práctica y eficiente"
         />
         <Acordion acordeonlist={acordeonlist} />
       </>

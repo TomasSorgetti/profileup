@@ -4,6 +4,7 @@ import asesoriaservice from "../../assets/images/asesoria_banner.png";
 import ServiceWrapper from "../../components/layout/wrapper/ServiceWrapper";
 import Acordion from "../../components/ui/acordion/Acordion";
 import Carrousel from "../../components/layout/carrousel/Carrousel";
+import ServiceIconCards from "../../components/features/serviceIconCards/serviceIconCards";
 
 const Asesoria = () => {
   const acordeonlist = [
@@ -26,6 +27,38 @@ const Asesoria = () => {
         "Medición de clima laboral y aspectos de liderazgo; análisis FODA; implementación de manuales de procedimientos; transformación cultural mediante calendario de comunicación interna y re-branding; análisis de métricas y KPI´s; procedimientos de 5S´s, entre otros.",
     },
   ];
+  const iconCards = [
+    {
+      id: 1,
+      title: "Profesionalismo",
+      description: "Lorem impsum asdkjaslkd sadkjslkadj sadj.",
+      src: profIcon,
+    },
+    {
+      id: 2,
+      title: "Análisis de competencias",
+      description: "Lorem impsum asdkjaslkd sadkjslkadj sadj.",
+      src: profIcon,
+    },
+    {
+      id: 3,
+      title: "Efectividad",
+      description: "Lorem impsum asdkjaslkd sadkjslkadj sadj.",
+      src: profIcon,
+    },
+    {
+      id: 4,
+      title: "Análisis de casos",
+      description: "",
+      src: profIcon,
+    },
+    {
+      id: 5,
+      title: "Eficiencia",
+      description: "Lorem impsum asdkjaslkd sadkjslkadj sadj.",
+      src: profIcon,
+    },
+  ];
 
   return (
     <ServiceWrapper>
@@ -43,6 +76,11 @@ const Asesoria = () => {
           image={asesoriaservice}
           link="/#"
           btnLabel="Realizar consulta"
+        />
+        <ServiceIconCards
+          cards={iconCards}
+          title="¿Cómo te ayudamos?"
+          description="Poder estar al pendiente de las tendencias puede ser desafiante, por eso es vital actualizarse"
         />
         <Acordion acordeonlist={acordeonlist} />
       </>

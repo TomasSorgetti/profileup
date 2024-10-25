@@ -1,7 +1,14 @@
+.header {
+  width: 100%;
+}
+.header nav {
+  max-width: 1680px;
+  margin: 0 auto;
+}
 .logo {
-    width: 130px;
+  width: 130px;
 }
 
 .link_margin {
-    margin-right: 40px;
+  margin-right: 40px;
 }

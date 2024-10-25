@@ -1,0 +1,40 @@
+.toast {
+  position: fixed;
+  padding: 15px 20px;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  z-index: 9999;
+  opacity: 0.9;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.success {
+  background-color: var(--success);
+}
+
+.error {
+  background-color: var(--error);
+}
+
+.left-top {
+  left: 20px;
+  top: 120px;
+}
+.left-bottom {
+  left: 20px;
+  bottom: 20px;
+}
+.middle-top {
+  top: 120px;
+  left: 50%;
+  right: 50%;
+}
+.right-top {
+  top: 120px;
+  right: 20px;
+}
+.right-bottom {
+  bottom: 20px;
+  right: 20px;
+}

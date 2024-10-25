@@ -17,7 +17,7 @@ import logo from "../../../assets/images/profielUp_logo.png";
 
 const NavigationBar = () => {
   return (
-    <>
+    <header className={styles.header}>
       <Navbar expand="lg" className="bg-body-tertiary p-3">
         <Link to="/" className={styles.navbar_brand}>
           <img src={logo} alt="ProfileUp logo" className={styles.logo} />
@@ -76,7 +76,7 @@ const NavigationBar = () => {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-    </>
+    </header>
   );
 };
 

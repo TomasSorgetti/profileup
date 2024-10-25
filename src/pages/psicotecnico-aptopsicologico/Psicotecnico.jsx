@@ -4,6 +4,7 @@ import psicotecnicoservice from "../../assets/images/psicotecnico_banner.png";
 import ServiceWrapper from "../../components/layout/wrapper/ServiceWrapper";
 import Acordion from "../../components/ui/acordion/Acordion";
 import Carrousel from "../../components/layout/carrousel/Carrousel";
+import ServiceIconCards from "../../components/features/serviceIconCards/serviceIconCards";
 const Psicotecnico = () => {
   const acordeonlist = [
     {
@@ -26,6 +27,39 @@ const Psicotecnico = () => {
     },
   ];
 
+  const iconCards = [
+    {
+      id: 1,
+      title: "Profesionalismo",
+      description: "Lorem impsum asdkjaslkd sadkjslkadj sadj.",
+      src: profIcon,
+    },
+    {
+      id: 2,
+      title: "Análisis de competencias",
+      description: "Lorem impsum asdkjaslkd sadkjslkadj sadj.",
+      src: profIcon,
+    },
+    {
+      id: 3,
+      title: "Efectividad",
+      description: "Lorem impsum asdkjaslkd sadkjslkadj sadj.",
+      src: profIcon,
+    },
+    {
+      id: 4,
+      title: "Análisis de casos",
+      description: "",
+      src: profIcon,
+    },
+    {
+      id: 5,
+      title: "Eficiencia",
+      description: "Lorem impsum asdkjaslkd sadkjslkadj sadj.",
+      src: profIcon,
+    },
+  ];
+
   return (
     <ServiceWrapper>
       <>
@@ -42,6 +76,11 @@ const Psicotecnico = () => {
           image={psicotecnicoservice}
           link="/#"
           btnLabel="Agendar una sesión"
+        />
+        <ServiceIconCards
+          cards={iconCards}
+          title="¿Qué te ofrecemos?"
+          description="Evaluación completa de tu estado emocional, y apto para conducir"
         />
         <Acordion acordeonlist={acordeonlist} />
       </>
