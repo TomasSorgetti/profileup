@@ -37,7 +37,7 @@ const Footer = () => {
 
           <div className="col-md-3 mb-md-0 mb-3">
             <h5>Información</h5>
-            <ul className="list-unstyled">
+            <ul className="list-unstyled d-flex flex-column align-items-center gap-1">
               <li>
                 <a href="#!">contacto@mail.com</a>
               </li>
@@ -48,7 +48,7 @@ const Footer = () => {
           </div>
           <div className="col-md-3 mb-md-0 mb-3">
             <h5>Contacto</h5>
-            <ul className="list-unstyled">
+            <ul className="list-unstyled d-flex flex-column align-items-center gap-1">
               <li>
                 <a href="#!">contacto@mail.com</a>
               </li>
@@ -58,9 +58,9 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="col-md-3 mb-md-0 mb-3">
+          <div className="col-md-3 mb-md-0 mb-3 d-flex flex-column align-items-center">
             <h5>Redes sociales</h5>
-            <ul className="list-unstyled d-flex flex-column align-items-start">
+            <ul className="list-unstyled d-flex flex-column align-items-start gap-1">
               <li>
                 <a href="#!">
                   <IconText icon={linkedinIcon}>Linkedin</IconText>
@@ -83,7 +83,7 @@ const Footer = () => {
 
       <hr />
 
-      <div className="footer-copyright text-center py-3">
+      <div className={styles.footer_copyright}>
         Todos los derechos reservados a Matías Martínez © Copyright{" "}
         {new Date().getFullYear()}
       </div>

@@ -1,21 +1,26 @@
 .footer {
-    background-color: var(--black);
-    color: var(--white);
+  background-color: var(--black);
+  color: var(--white);
 }
 .footer_main_content {
-    padding-top: 40px;
+  padding-top: 40px;
 }
 .footer a {
-    color: var(--white);
+  color: var(--white);
 }
 .footer h5 {
-    filter: brightness(.8);
+  filter: brightness(0.8);
 }
 
 .logo_footer {
-    width: 130px;
+  width: 130px;
 }
 
 .logo_footer_container {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
+}
+.footer_copyright {
+  text-align: center;
+  padding-bottom: 12px;
+  color: var(--light-text);
 }
