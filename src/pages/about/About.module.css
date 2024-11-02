@@ -1,0 +1,22 @@
+.profile_image img {
+  width: 555px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid var(--white);
+}
+.about_banner {
+  background: url("../../assets/images/profile_background.png") no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  display: flex;
+}
+.about_wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  margin: 120px auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-bottom: 200px;
+}

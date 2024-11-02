@@ -12,8 +12,8 @@
   letter-spacing: 0.3125rem;
   font-size: 1.5rem;
 }
-.main_title_container h1,  .main_title_container p{
+.main_title_container h1,
+.main_title_container h3 {
   display: inline;
   max-width: 562px;
 }
-
